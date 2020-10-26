@@ -30,7 +30,6 @@ public class ReportingStructureServiceImpl implements ReportingStructureService 
 
     @Override
     public int getAllReportCount(Employee employee) {
-        int countOfReports = 0;
         int numOfReports = 0;
         List<Employee> directReports = employee.getDirectReports();
 
@@ -62,6 +61,6 @@ public class ReportingStructureServiceImpl implements ReportingStructureService 
             return numOfReports;
         }
 
-        return countOfReports;
+        return numOfReports;
     }
 }
